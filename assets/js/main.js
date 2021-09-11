@@ -23,10 +23,7 @@ document.querySelectorAll('.nav__link').forEach(item =>
   item.addEventListener('click', function (e) {
     e.preventDefault();
     document.querySelector('.active').classList.remove('active');
-
-    if (e.target.classList.contains('nav__link')) {
-      const id = e.target.getAttribute('href');
-      document.querySelector(id).scrollIntoView({behavior: 'smooth'});
-    }
+    const id = e.target.getAttribute('href');
+    document.querySelector(id).scrollIntoView({behavior: 'smooth'});
     e.target.classList.add('active');
   }))
