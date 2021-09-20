@@ -121,7 +121,7 @@ img {
     grid-template-columns: 100%;
     column-gap: 2rem;
     width: calc(100% - 3rem);
-    margin-inline: var(--mb-3);
+    margin: 0 var(--mb-3);
 }
 
 .l-header {
