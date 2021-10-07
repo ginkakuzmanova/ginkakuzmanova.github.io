@@ -284,17 +284,22 @@ img {
 }
 
 .about__data {
-    text-align: center;
+    background-size: cover;
+    border-radius: 1.2rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .2);
+    background-image: linear-gradient(to right bottom,
+    rgba(255, 255, 255, .9) 0%,
+    rgba(255, 238, 238, .9) 100%),
+    url(../img/work1.jpg);
+    display: flex;
 }
 
 .about__description {
-    margin-bottom: var(--mb-4);
-}
-
-.about__img {
-    width: 15rem;
-    border-radius: .5rem;
-    margin: 0 auto;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    padding: 2rem;
+    color: #000;
 }
 
 .about__information {
@@ -360,19 +365,19 @@ img {
 }
 
 .skills__html {
-    width: 90%;
+    width: 100%;
 }
 
 .skills__js {
-    width: 85%;
+    width: 95%;
 }
 
 .skills__ng {
-    width: 70%;
+    width: 95%;
 }
 
 .skills__react {
-    width: 70%;
+    width: 95%;
 }
 
 .skills__java {
@@ -480,10 +485,6 @@ img {
         margin-bottom: var(--mb-5);
     }
 
-    .about__img {
-        width: 22rem;
-    }
-
     .about__information {
         padding-left: 4rem;
     }
@@ -501,6 +502,10 @@ img {
         padding: 3rem .5rem;
         border-radius: .5rem;
     }
+}
+
+@media screen and (max-width: 40em) {
+
 }
 
 @media screen and (min-width: 64em) {
